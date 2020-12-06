@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :bets
   resources :race_results
   resources :drivers
   resources :races
