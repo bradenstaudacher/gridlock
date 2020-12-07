@@ -15,9 +15,9 @@
   <tbody>
     <% @bets.each do |bet| %>
       <tr>
-        <td><%= bet.user_id %></td>
-        <td><%= bet.driver_id %></td>
-        <td><%= bet.race_id %></td>
+        <td><%= "#{bet.user.first_name} #{bet.user.last_name}" %></td>
+        <td><%= "#{bet.driver.first_name} #{bet.driver.last_name}" %></td>
+        <td><%= bet.race.name %></td>
         <td><%= link_to 'Show', bet %></td>
         <td><%= link_to 'Edit', edit_bet_path(bet) %></td>
         <td><%= link_to 'Destroy', bet, method: :delete, data: { confirm: 'Are you sure?' } %></td>

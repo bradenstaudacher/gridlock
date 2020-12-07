@@ -1,5 +1,5 @@
 class Bet < ApplicationRecord
   belongs_to :user
-  has_one :race
-  has_one :driver
+  belongs_to :race
+  belongs_to :driver
 end
